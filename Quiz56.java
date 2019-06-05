@@ -3,16 +3,16 @@ public class Quiz56 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(studying(null)+" is studying");
-
+	
+		System.out.println(studying("Romil,Jao"));
+		System.out.println(studying("Naveen,Carolini"));
+		
 	}
 	public static String studying(String name)
 	{
-		if(name==null)
-		{
-			return "Nobody";
-		}
-		return name;
+		String x=name.substring(name.indexOf(",")+1);
+		String y=name.substring(0, name.indexOf(","));
+		return y+" and "+x +" are studying";
 	}
 
 }
